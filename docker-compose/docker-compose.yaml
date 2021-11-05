@@ -69,6 +69,9 @@ services:
   # service.
   sourcegraph-frontend-0:
     container_name: sourcegraph-frontend-0
+    #    TODO This is for https
+#    ports:
+#      - '0.0.0.0:6060:6060'
     image: 'index.docker.io/sourcegraph/frontend:3.33.0@sha256:d9509019a7a75c3f1b6eb78dca4bbc8f03df0e95edbeb9672a3e3106b98eda10'
     cpus: 4
     mem_limit: '8g'
